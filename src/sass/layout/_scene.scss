@@ -1,0 +1,14 @@
+.scene {
+    .rubik-s-cube {
+        &__unit {
+            width: $unit-width;
+            height: $unit-height;
+            background-color: hsla(0, 0%, 100%, 0.2);
+            position: relative;
+            &__side {
+                background-color: hsla(0, 0%, 100%, 0.2);
+                position: absolute;
+            }
+        }
+    }
+}

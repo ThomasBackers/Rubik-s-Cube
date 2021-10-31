@@ -1,0 +1,17 @@
+{
+  "name": "rubik-s-cube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Thomas Backers",
+  "license": "Do What The F*ck You Want To Public License",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.43.4"
+  }
+}

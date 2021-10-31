@@ -1,10 +1,9 @@
 .scene {
     .rubik-s-cube {
-        height: 50vh;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: fit-content;
         &__unit {
             width: $unit-width;
             height: $unit-height;

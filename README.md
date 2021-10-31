@@ -1,6 +1,6 @@
 # Rubik's Cube v1.0.0
 
-## legal notices
+### legal notices
 
 This project is libre, and licenced under the terms of the
 

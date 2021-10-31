@@ -1,6 +1,11 @@
 // Palette
 // Fonts
 // Rubik's cube units
-$unit-width: 100px;
-$unit-height: 100px;
-$unit-depth: 100px;
+$unit-width: 10vmin;
+$unit-height: 10vmin;
+$unit-depth: 10vmin;
+// Units sides
+$first-side-coeff: -0.5;
+$second-side-coeff: -$first-side-coeff; // make it positive
+$first-side-rotation: 90deg;
+$second-side-rotation: -$first-side-rotation; // make it negative

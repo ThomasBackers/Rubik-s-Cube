@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     .rubik-s-cube {
-        width: $rubiks-width;
-        height: $rubiks-height;
+        width: 3 * $cube-width;
+        height: 3 * $cube-height;
         position: relative;
         transform: rotateX(24deg) rotateY(32deg);
         transform-style: preserve-3d;
@@ -93,7 +93,7 @@
                 transform: translate3d(2 * $cube-width, 2 * $cube-height, $cube-depth * (- 2 * $transform-coeff));
             }
             &__side {
-                border: 1px solid black;
+                border: 3px solid black;
                 box-sizing: border-box;
                 position: absolute;
                 &:nth-of-type(1),

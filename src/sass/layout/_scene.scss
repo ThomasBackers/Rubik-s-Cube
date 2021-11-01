@@ -3,9 +3,9 @@
 //         display: flex;
 //         justify-content: center;
 //         align-items: center;
-//         &__unit {
-//             width: $unit-width;
-//             height: $unit-height;
+//         &__cube {
+//             width: $cube-width;
+//             height: $cube-height;
 //             position: relative;
 //             transform-style: preserve-3d;
 //             transform: rotateX(24deg) rotateY(32deg);
@@ -16,47 +16,129 @@
 //                 position: absolute;
 //                 &:nth-of-type(1),
 //                 &:nth-of-type(2) {
-//                     width: $unit-width;
-//                     height: $unit-height;
+//                     width: $cube-width;
+//                     height: $cube-height;
 //                 }
 //                 &:nth-of-type(1) {
-//                     transform: translate3d(0, 0, $unit-depth * $first-side-coeff);
+//                     transform: translate3d(0, 0, $cube-depth * $transform-coeff);
 //                 }
 //                 &:nth-of-type(2) {
-//                     transform: translate3d(0, 0, $unit-depth * $second-side-coeff);
+//                     transform: translate3d(0, 0, $cube-depth * (- $transform-coeff));
 //                 }
 //                 &:nth-of-type(3),
 //                 &:nth-of-type(4) {
-//                     width: $unit-depth;
-//                     height: $unit-height;
+//                     width: $cube-depth;
+//                     height: $cube-height;
 //                     left: 50%;
 //                     top: 50%;
 //                 }
 //                 &:nth-of-type(3) {
-//                     transform: translate(-50%, -50%) rotateY($first-side-rotation) translate3d(0, 0, $unit-width * $first-side-coeff);
+//                     transform: translate(-50%, -50%) rotateY($side-rotation-angle) translate3d(0, 0, $cube-width * $transform-coeff);
 //                 }
 //                 &:nth-of-type(4) {
-//                     transform: translate(-50%, -50%) rotateY($second-side-rotation) translate3d(0, 0, $unit-width * $first-side-coeff);
+//                     transform: translate(-50%, -50%) rotateY((-$side-rotation-angle)) translate3d(0, 0, $cube-width * $transform-coeff);
 //                 }
 //                 &:nth-of-type(5),
 //                 &:nth-of-type(6) {
-//                     height: $unit-depth;
-//                     width: $unit-width;
+//                     height: $cube-depth;
+//                     width: $cube-width;
 //                     top: 50%;
 //                     left: 50%;
 //                 }
 //                 &:nth-of-type(5) {
-//                     transform: translate(-50%, -50%) rotateX($second-side-rotation) translate3d(0, 0, $unit-height * $first-side-coeff);
+//                     transform: translate(-50%, -50%) rotateX((-$side-rotation-angle)) translate3d(0, 0, $cube-height * $transform-coeff);
 //                 }
 //                 &:nth-of-type(6) {
-//                     transform: translate(-50%, -50%) rotateX($first-side-rotation) translate3d(0, 0, $unit-height * $first-side-coeff);
+//                     transform: translate(-50%, -50%) rotateX($side-rotation-angle) translate3d(0, 0, $cube-height * $transform-coeff);
 //                 }
 //             }
 //         }
 //     }
 // }
 .scene {
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    .rubik-s-cube {
+        width: $rubiks-width;
+        height: $rubiks-height;
+        position: relative;
+        border: 1px solid black;
+        transform: rotateX(24deg) rotateY(32deg);
+        transform-style: preserve-3d;
+        &__cube {
+            position: absolute;
+            width: $cube-width;
+            height: $cube-height;
+            box-sizing: border-box;
+            transform-style: preserve-3d;
+            &:nth-of-type(1) {
+                transform: translate3d(0, 0, $cube-depth * 2 * $transform-coeff);
+            }
+            &:nth-of-type(3) {
+                transform: translate3d(0, 0, $cube-depth * (- 2 * $transform-coeff));
+            }
+            &:nth-of-type(4) {
+                transform: translate3d($cube-width, 0, $cube-depth * 2 * $transform-coeff);
+            }
+            &:nth-of-type(5) {
+                transform: translate3d($cube-width, 0, 0);
+            }
+            &:nth-of-type(6) {
+                transform: translate3d($cube-width, 0, $cube-depth * (- 2 * $transform-coeff));
+            }
+            &:nth-of-type(7) {
+                transform: translate3d(2 * $cube-width, 0, $cube-depth * 2 * $transform-coeff);
+            }
+            &:nth-of-type(8) {
+                transform: translate3d(2 * $cube-width, 0, 0);
+            }
+            &:nth-of-type(9) {
+                transform: translate3d(2 * $cube-width, 0, $cube-depth * (- 2 * $transform-coeff));
+            }
+            &__side {
+                border: 1px solid black;
+                box-sizing: border-box;
+                position: absolute;
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    width: $cube-width;
+                    height: $cube-height;
+                }
+                &:nth-of-type(1) {
+                    transform: translate3d(0, 0, $cube-depth * $transform-coeff);
+                }
+                &:nth-of-type(2) {
+                    transform: translate3d(0, 0, $cube-depth * (-$transform-coeff));
+                }
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+                    width: $cube-depth;
+                    height: $cube-height;
+                    left: 50%;
+                    top: 50%;
+                }
+                &:nth-of-type(3) {
+                    transform: translate(-50%, -50%) rotateY($side-rotation-angle) translate3d(0, 0, $cube-width * $transform-coeff);
+                }
+                &:nth-of-type(4) {
+                    transform: translate(-50%, -50%) rotateY(-$side-rotation-angle) translate3d(0, 0, $cube-width * $transform-coeff);
+                }
+                &:nth-of-type(5),
+                &:nth-of-type(6) {
+                    height: $cube-depth;
+                    width: $cube-width;
+                    top: 50%;
+                    left: 50%;
+                }
+                &:nth-of-type(5) {
+                    transform: translate(-50%, -50%) rotateX(-$side-rotation-angle) translate3d(0, 0, $cube-height * $transform-coeff);
+                }
+                &:nth-of-type(6) {
+                    transform: translate(-50%, -50%) rotateX($side-rotation-angle) translate3d(0, 0, $cube-height * $transform-coeff);
+                }
+            }
+        }
+    }
 }

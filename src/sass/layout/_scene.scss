@@ -7,7 +7,6 @@
         width: $rubiks-width;
         height: $rubiks-height;
         position: relative;
-        border: 1px solid black;
         transform: rotateX(24deg) rotateY(32deg);
         transform-style: preserve-3d;
         &__cube {

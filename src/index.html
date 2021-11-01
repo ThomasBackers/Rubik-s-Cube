@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="sass/main.scss">
+        <script src="js/main.js" defer></script>
         <title>Rubik's Cube</title>
     </head>
     <body>
@@ -28,56 +29,221 @@
 
         <main class="scene">
             <div class="rubik-s-cube">
-                <div class="rubik-s-cube__unit"
-                     id="unit-1" 
-                     data-rubik-s-side="front"
-                     data-abscissa="1"
-                     data-ordinate="1"
-                >
-                    <div class="rubik-s-cube__unit__side" 
-                         data-unit-side="front"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="back"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="left"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="right"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="top"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="bottom"
-                    ></div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
                 </div>
-
-                <div class="rubik-s-cube__unit"
-                     id="unit-2" 
-                     data-rubik-s-side="front"
-                     data-abscissa="2"
-                     data-ordinate="1"
-                >
-                    <div class="rubik-s-cube__unit__side" 
-                         data-unit-side="front"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="back"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="left"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="right"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="top"
-                    ></div>
-                    <div class="rubik-s-cube__unit__side"
-                         data-unit-side="bottom"
-                    ></div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                </div>
+                <div class="rubik-s-cube__cube">
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
+                    <div class="rubik-s-cube__cube__side"></div>
                 </div>
             </div>
         </main>
@@ -87,7 +253,6 @@
                 2021 | Thomas Backers | WTFPL 3.1
             </p>
         </footer>
-
         <!--
             This project is libre, and licenced under the terms of the
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENCE, version 3.1,

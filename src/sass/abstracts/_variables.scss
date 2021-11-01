@@ -1,11 +1,12 @@
-// Palette
-// Fonts
-// Rubik's cube units
-$unit-width: 10vmin;
-$unit-height: 10vmin;
-$unit-depth: 10vmin;
-// Units sides
-$first-side-coeff: -0.5;
-$second-side-coeff: -$first-side-coeff; // make it positive
-$first-side-rotation: 90deg;
-$second-side-rotation: -$first-side-rotation; // make it negative
+// PALETTE
+// FONTS
+// RUBIK'S CUBE
+// Cubes sizing
+$cube-width: 10vmin;
+$cube-height: 10vmin;
+$cube-depth: 10vmin;
+// Rubik's cube sizing
+$rubiks-width: 3 * $cube-width;
+$rubiks-height: 3 * $cube-height;
+$transform-coeff: -0.5;
+$side-rotation-angle: 90deg;

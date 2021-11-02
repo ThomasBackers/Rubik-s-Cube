@@ -34,28 +34,28 @@ cubesSides.forEach(cubeSides => {
     // we want to loop through the sides
     // but we'll need the index so:
     for (let i = 0; i < 6; i++)
-        // if the current side does NOT includes "covered"
+        // if the current side does NOT include "covered"
         if (!cubeSides[i].className.includes("covered"))
             switch(i) {
                 // depending on the side orientation,
                 // give it a particular backgroundColor
                 case 0:
-                    cubeSides[i].style.backgroundColor = "red"
+                    cubeSides[i].style.backgroundColor = "#495867"
                     break
                 case 1:
-                    cubeSides[i].style.backgroundColor = "blue"
+                    cubeSides[i].style.backgroundColor = "#577399"
                     break
                 case 2:
-                    cubeSides[i].style.backgroundColor = "green"
+                    cubeSides[i].style.backgroundColor = "#BDD5EA"
                     break
                 case 3:
-                    cubeSides[i].style.backgroundColor = "yellow"
+                    cubeSides[i].style.backgroundColor = "#F7F7FF"
                     break
                 case 4:
-                    cubeSides[i].style.backgroundColor = "orangered"
+                    cubeSides[i].style.backgroundColor = "#FE5F55"
                     break
                 case 5:
-                    cubeSides[i].style.backgroundColor = "white"
+                    cubeSides[i].style.backgroundColor = "#BC170F"
                     break
             }
 })

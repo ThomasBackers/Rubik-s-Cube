@@ -1,3 +1,21 @@
+// Palette
+let bordersColor = "#000",
+    coveredSidesClr = "#000",
+    sidesColor1 = "#495867",
+    sidesColor2 = "#577399",
+    sidesColor3 = "#BDD5EA",
+    sidesColor4 = "#F7F7FF",
+    sidesColor5 = "#FE5F55",
+    sidesColor6 = "#BC170F",
+// Sizing
+    cubesWidth = 60, //px
+    cubesHeight = 60, //px
+    cubesDepth = 60, //px
+    bordersWidth = 4, //px
+// Positioning
+    transformCoeff = -0.5,
+    sidesRotationAngle = 90 //deg
+
 // get the Rubik's cube HTML element
 const rubiksCube = document.querySelector(".rubik-s-cube")
 // store all the cubes inside it into a const
@@ -40,22 +58,71 @@ cubesSides.forEach(cubeSides => {
                 // depending on the side orientation,
                 // give it a particular backgroundColor
                 case 0:
-                    cubeSides[i].style.backgroundColor = "#495867"
+                    cubeSides[i].style.backgroundColor = sidesColor1
                     break
                 case 1:
-                    cubeSides[i].style.backgroundColor = "#577399"
+                    cubeSides[i].style.backgroundColor = sidesColor2
                     break
                 case 2:
-                    cubeSides[i].style.backgroundColor = "#BDD5EA"
+                    cubeSides[i].style.backgroundColor = sidesColor3
                     break
                 case 3:
-                    cubeSides[i].style.backgroundColor = "#F7F7FF"
+                    cubeSides[i].style.backgroundColor = sidesColor4
                     break
                 case 4:
-                    cubeSides[i].style.backgroundColor = "#FE5F55"
+                    cubeSides[i].style.backgroundColor = sidesColor5
                     break
                 case 5:
-                    cubeSides[i].style.backgroundColor = "#BC170F"
+                    cubeSides[i].style.backgroundColor = sidesColor6
                     break
             }
 })
+
+
+
+class Cube {
+    constructor(HTMLElement) {
+        this.HTMLElement = HTMLElement
+        this.sides = [...HTMLElement.children]
+        this.coordinates = ""
+    }
+    setSidesColor(
+        color1 = bordersColor,
+        color2 = sidesColor1,
+        color3 = sidesColor2,
+        color4 = sidesColor3,
+        color5 = sidesColor4,
+        color6 = sidesColor5,
+        color7 = sidesColor6,
+        color8 = coveredSidesClr
+    ) {
+        for (let i = 0; i < 6; i++) {
+            if (!this.sides[i].className.includes("covered")) {
+                this.sides[i].style.border = `4px solid ${color1}`
+                switch(i) {
+                    case 0:
+                        this.sides[i].style.backgroundColor = color2
+                        break
+                    case 1:
+                        this.sides[i].style.backgroundColor = color3
+                        break
+                    case 2:
+                        this.sides[i].style.backgroundColor = color4
+                        break
+                    case 3:
+                        this.sides[i].style.backgroundColor = color5
+                        break
+                    case 4:
+                        this.sides[i].style.backgroundColor = color6
+                        break
+                    case 5:
+                        this.sides[i].style.backgroundColor = color7
+                        break
+                }
+            } else this.sides[i].style.backgroundColor = color8
+        }
+    }
+}
+
+cubes[0].style.transform = `translate3d(0, 0, -60px)`
+console.log(cubes[0].style.transform)

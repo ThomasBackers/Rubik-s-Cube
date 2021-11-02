@@ -27,13 +27,14 @@ for (let cube of cubes) {
 // front top left,     middle top left,     back top left,
 // front center right, middle center right, back center right,
 // etc.
+// ---- BEWARE: orientations are valid depending on the current Rubik's cube CSS orientation only ----
 
 // for each cube (represented by its sides array) in cubesSides 
 cubesSides.forEach(cubeSides => {
     // we want to loop through the sides
     // but we'll need the index so:
     for (let i = 0; i < 6; i++)
-        // if the current side do NOT includes "covered"
+        // if the current side does NOT includes "covered"
         if (!cubeSides[i].className.includes("covered"))
             switch(i) {
                 // depending on the side orientation,

@@ -52,7 +52,7 @@ cubesSides.forEach(cubeSides => {
                     cubeSides[i].style.backgroundColor = "yellow"
                     break
                 case 4:
-                    cubeSides[i].style.backgroundColor = "orange"
+                    cubeSides[i].style.backgroundColor = "orangered"
                     break
                 case 5:
                     cubeSides[i].style.backgroundColor = "white"

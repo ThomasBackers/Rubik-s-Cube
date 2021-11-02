@@ -1,5 +1,14 @@
-// Those rules only generate the Rubik's Cube skeleton
-// see the .js files for more details on the process
+@keyframes rubik-s-rotation {
+    0% {
+        transform: rotateX(-24deg) rotateY(-32deg);
+    }
+    100% {
+        transform: rotateX(-24deg) rotateY(328deg);
+    }
+}
+/* Those rules only generate the Rubik's Cube skeleton
+   see the .js files for more details on the process
+*/
 .scene {
     height: 80vh;
     display: flex;
@@ -9,7 +18,8 @@
         width: 3 * $cube-width;
         height: 3 * $cube-height;
         position: relative;
-        transform: rotateX(24deg) rotateY(32deg);
+        transform: rotateX(-24deg) rotateY(-32deg);
+        animation: rubik-s-rotation 10s linear infinite;
         transform-style: preserve-3d;
         &__cube {
             position: absolute;

@@ -20,7 +20,7 @@
         height: 3 * $cube-height;
         position: relative;
         transform: rotateX(340deg) rotateY(160deg) rotateZ(0deg);
-        //animation: rubik-s-rotation 10s linear infinite;
+        animation: rubik-s-rotation 10s linear infinite;
         transform-style: preserve-3d;
         &__cube {
             position: absolute;

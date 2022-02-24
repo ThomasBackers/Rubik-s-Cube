@@ -84,7 +84,7 @@ class Cube {
     constructor(HTMLElement) {
         this.HTMLElement = HTMLElement
         this.sides = [...HTMLElement.children]
-        this.coordinates = ""
+        this.coordinates = [,,]
     }
     setSidesColor(
         color1 = bordersColor,
